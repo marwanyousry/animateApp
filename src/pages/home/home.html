@@ -11,4 +11,36 @@
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>
+  <h1 class="animated infinite bounce delay-2s">Example</h1>
+
+  <ion-card #card1>
+    <ion-card-header>
+      Card One
+    </ion-card-header>
+    <ion-card-content>
+      Nulla velit cupidatat ea id irure aliqua exercitation. Labore consequat id consectetur ipsum laboris. Voluptate eu voluptate officia adipisicing ex. Fugiat do velit esse ad esse laboris aute nulla cillum tempor amet. Veniam elit deserunt est esse. Exercitation ex ut mollit nisi pariatur nisi duis adipisicing quis ut enim. Ad consectetur Lorem elit fugiat.
+    </ion-card-content>
+  </ion-card>
+  <ion-card #card2>
+    <ion-card-header>
+      Card Two
+    </ion-card-header>
+    <ion-card-content>
+      Sint voluptate est veniam amet fugiat aute eu quis dolore ea nisi labore do pariatur. Occaecat cillum voluptate magna occaecat laborum. Ad commodo voluptate ea deserunt amet magna minim Lorem. Consequat consequat consequat laborum do elit aute occaecat sunt anim commodo id do sunt sint. Eu ullamco occaecat labore fugiat do minim est consequat voluptate cillum voluptate ipsum aute labore. Aute non consequat nostrud aute anim labore voluptate irure excepteur excepteur ex do ut.
+    </ion-card-content>
+  </ion-card>
+  <ion-card #card3>
+    <ion-card-header>
+      Card Three
+    </ion-card-header>
+    <ion-card-content>
+      Velit amet aute aliqua ad dolore do incididunt consectetur eiusmod officia incididunt sint velit deserunt. In aliqua cillum deserunt cupidatat pariatur ut cillum velit ut mollit qui minim. Amet aliquip sint laborum dolor ullamco nisi sunt ut dolore duis eiusmod et. Aliqua aute duis aute irure ut officia in elit culpa aliquip.
+    </ion-card-content>
+  </ion-card>
+  <button ion-button block menuToggle>Toggle Menu</button>
+  <ion-card *ngFor="let item of card; let i = index" class="animated slideInLeft delay-{{i}}s">
+    <ion-card-header>
+      {{item}}
+    </ion-card-header>
+  </ion-card>
 </ion-content>
